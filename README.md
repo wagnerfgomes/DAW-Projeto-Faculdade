@@ -18,8 +18,7 @@
 
 > - Página de Apresentação: Deve conter uma breve descrição pessoal e habilidades.
 > - Galeria de Projetos: Exibir os projetos já desenvolvidos ou simulados, com uma imagem (ou placeholder) e uma breve descrição de cada um.
-> - Página de Contato: Deve incluir um formulário para contato (nome, email, mensagem) e um mapa (pode ser uma imagem simulada se o
-aluno não souber integrar mapas).
+> - Página de Contato: Deve incluir um formulário para contato (nome, email, mensagem) e um mapa (pode ser uma imagem simulada se o aluno não souber integrar mapas).
 
 **3. Menus de Navegação**
 
