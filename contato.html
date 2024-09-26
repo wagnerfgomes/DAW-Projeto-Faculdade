@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./assets/Icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="animacao-bk">
+    <header>
+        <p class="logo">Wagner Felipe</p>
+        <nav class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="navegacao__lista__itens"><a href="./index.html"
+                        class=" navegacao__lista__itens__link  ">Apresentação</a></li>
+                <li class="navegacao__lista__itens"><a href="./galeria.html" class="navegacao__lista__itens__link">Galeria de
+                        Projetos</a></li>
+                <li class="navegacao__lista__itens"><a href="" class="navegacao-foco navegacao__lista__itens__link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="mapa">
+            <h2 class="mapa__titulo titulo-padrao">Venha nos visitar</h2>
+            <p class="mapa__endereco subtitulo-padrao">
+                <i class="material-symbols-outlined">
+                distance</i>
+                R. Guilherme Pinto, 114 - Graças, Recife - PE, 52011-210</p>
+            <div class="mapa__container-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.4875693411173!2d-34.90582428908687!3d-8.051644680397192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18e1236c4cc5%3A0xcf30335f63037230!2sUNINASSAU%20Gra%C3%A7as%20-%20Bloco%20A!5e0!3m2!1spt-BR!2sbr!4v1727310339832!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0; border-radius: 5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="email">
+            <h2 class="email titulo-padrao">Mande um e-mail</h2>
+            <form class="email__formulario" action="" method="get">
+                <label class="email__formulario__texto subtitulo-padrao" for="nome">Nome:</label>
+                <input class="email__formulario__entrada" type="text" id="nome" placeholder="Digite seu nome">
+                <label class="email__formulario__texto subtitulo-padrao" for="email">Email:</label>
+                <input class="email__formulario__entrada" type="email" id="email" placeholder="Digite seu email">
+                <label class="email__formulario__texto subtitulo-padrao" for="mensagem">Mensagem:</label>
+                <textarea class="email__formulario__entrada-mensagem" name="" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                <input class="email__formulario__butao butao-padrao" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="texto-rodape subtitulo-padrao">Site criado por <strong class="texto-rodape__destaque subtitulo-padrao">Wagner Felipe Gomes</strong></p>
+    </footer>
+</body>
+</html>

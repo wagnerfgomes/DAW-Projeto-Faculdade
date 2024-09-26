@@ -49,3 +49,45 @@
 .butao-padrao:hover{
     background-color: var(--destaque-hover);
 }
+
+.animacao-bk{
+    background: radial-gradient(36.46% 50% at var(--angle-x) var(--angle-y), #14AE5C 0%, #051A13 100%);
+    animation: 10s spin linear infinite;
+}
+
+
+@property --angle-x {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+@property --angle-y {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 0%;
+}
+
+@keyframes spin {
+    0% {
+        --angle-x: 50%;
+        --angle-y: 0%;
+    }
+    25% {
+        --angle-x: 100%;
+        --angle-y: 50%;
+    }
+    50% {
+        --angle-x: 50%;
+        --angle-y: 100%;
+    }
+    75% {
+        --angle-x: 0%;
+        --angle-y: 50%;
+    }
+    100% {
+        --angle-x: 50%;
+        --angle-y: 0%;
+    }
+}
+

@@ -3,7 +3,6 @@
 /*--------------CSS RESET--------------*/
 html {
     overflow-x: hidden;
-    height: 100%;
 }
 
 * {
@@ -25,15 +24,17 @@ html {
     --light: #F2F4F3;
     --dark-green: #051A13;
     --dark-green-opaco: rgba(5, 26, 19, 0.9);
-    --destaque-hover: #f88062;
+    --destaque-hover: #F3633F;
     --light-green: #2EF2B1;
 }
 
+
+
+
 body {
-    background: radial-gradient(75.68% 82.86% at 84.97% 0%, #14AE5C 0%, #051A13 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 100vw;
+    width: 100vw;
     height: 100%;
     font-size: 1.6rem;
     padding: 1.5rem 13.3rem;
@@ -42,7 +43,6 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 10rem;
-    overflow: auto;
 }
 
 header {
@@ -124,7 +124,6 @@ main {
     font-family: "Comfortaa";
     font-size: 5rem;
     font-weight: 300;
-    letter-spacing: 9.115px;
 }
 
 .secao-titulo__nome--titulo {
@@ -171,10 +170,10 @@ main {
 }
 
 .tabela-colunas,.tabela-dados{
-    border: 1px solid var(--light);
+    border: .1rem solid var(--light);
     color: var(--light);
     text-align: center;
-    padding: 10px;
+    padding: 1.0rem;
 }
 
 .texto-rodape__destaque{
@@ -234,4 +233,62 @@ main {
 
 .container-projetos__link:hover .projetos-nome{
     color: var(--dark-green);
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.mapa__endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.email__formulario{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.email__formulario__entrada, .email__formulario__entrada-mensagem{
+    width: 100%;
+    display: flex;
+    padding: 1rem 2.0rem;
+    align-items: center;
+    gap: 1.0rem;
+    border-radius: 10rem;
+    border: .1rem solid var(--light);
+    background-color: transparent;
+    color: var(--light);
+    font-size: 1.4rem;
+}
+.email__formulario__entrada-mensagem{
+    height: 35rem;
+    border-radius: 2.5rem;
+}
+
+.email__formulario__entrada::placeholder,.email__formulario__entrada-mensagem::placeholder{
+    color: var(--light);
+    font-size: 1.2rem;
+}
+
+.email__formulario__butao{
+    align-self: center;
 }
