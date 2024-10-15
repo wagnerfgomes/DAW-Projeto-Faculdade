@@ -216,10 +216,13 @@ main {
     align-items: center;
     flex-direction: column;
     gap: 1.2rem;
+    padding: .5rem;
+    transition: height 2s;
 }
 
 .container-projetos__link:hover .container-projetos__link__projetos__nome{
     background-color: rgba(248, 128, 98, 0.90);
+    height: 80%;
 }
 
 .projetos-nome{
@@ -229,10 +232,25 @@ main {
     font-size: 2.1rem;
     font-style: normal;
     font-weight: 400;
+    transition: color 2s;
 }
 
 .container-projetos__link:hover .projetos-nome{
     color: var(--dark-green);
+}
+
+.descricao-projeto{
+    display: none;
+    color: var(--light);
+    font-family: "Comfortaa";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    transition-delay: display 1s 2s;
+}
+
+.container-projetos__link:hover .descricao-projeto{
+    display: block;
 }
 
 .mapa{
